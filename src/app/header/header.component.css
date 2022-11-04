@@ -1,0 +1,13 @@
+header {
+  align-items: center;
+  color: var(--dark-puce);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 0;
+  text-align: center;
+}
+
+h6 {
+  font-weight: 400;
+}

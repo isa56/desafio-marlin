@@ -1,0 +1,24 @@
+.post-container {
+  border-radius: 0.8em;
+  box-shadow:  0 0 0.5em 0.1em rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 1em;
+  width: 80%;
+}
+
+.post-container img {
+  border-radius: 0.8em;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-container h3 {}
+
+.post-container p {
+  margin: 0;
+}
+
+.post-container a {
+  color: var(--cyan-blue);
+}
