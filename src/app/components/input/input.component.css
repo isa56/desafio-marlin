@@ -1,0 +1,22 @@
+.input-container {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.input-field {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.icon {
+  color: #ccc;
+  font-size: large;
+  min-width: 50px;
+  padding: 0.5rem;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.sidebar-item {
+  color: var(--gray);
+  margin: 2rem 0;
+}
+
+h6 {
+  font-size: medium;
+}
+
+.category-ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.category-ul li {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.category-link {
+  color: var(--gray);
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+hr {
+  color: #ccc;
+  margin-top: 0.3rem;
+}

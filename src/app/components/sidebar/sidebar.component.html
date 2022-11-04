@@ -1,0 +1,14 @@
+<div class="sidebar-item">
+  <h6>Categorias</h6>
+  <ul class="category-ul">
+    <li *ngFor="let category of categories">
+      <a href="#" class="category-link">{{category.name}}</a>
+      <hr>
+    </li>
+  </ul>
+</div>
+
+<div class="sidebar-item">
+  <h6>Procurando alguma notícia?</h6>
+  <app-input placeholder="Pesquisar por..."></app-input>
+</div>
