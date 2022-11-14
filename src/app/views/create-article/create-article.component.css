@@ -1,5 +1,6 @@
 .article {
   color: var(--gray);
+  padding: 0 10px;
   width: 600px;
 }
 
@@ -57,4 +58,12 @@ button:hover {
   .article {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 400px) {
+
+  h1 {
+    text-align: center;
+  }
+
 }

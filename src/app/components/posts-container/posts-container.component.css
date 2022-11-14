@@ -3,7 +3,7 @@
   grid-template-columns: auto auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .posts-container {
     grid-template-columns: auto;
   }

@@ -1,3 +1,7 @@
+.sidebar {
+  min-width: 150px;
+}
+
 .sidebar-item {
   color: var(--gray);
   margin: 2rem 0;

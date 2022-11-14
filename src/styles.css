@@ -24,6 +24,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+::selection {
+  background-color: var(--pacific-blue);
+  color: var(--dark-puce);
+}
+
 .container {
   margin: 0;
   padding: 2rem;

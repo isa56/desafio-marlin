@@ -8,7 +8,7 @@
   margin: 0.8em;
   min-height: 42em;
   padding: 0 0 1em 0;
-  width: 30em;
+  width: 25em;
 }
 
 .post-container img {
@@ -23,7 +23,7 @@
 }
 
 .post-container p {
-  font-weight: lighter;
+  font-weight: medium;
   margin: 0;
   padding: 1em;
 }
@@ -31,18 +31,23 @@
 .post-container a {
   color: var(--cyan-blue);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 0 1em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .post-container {
     box-shadow:  0 0.4em 0.5em 0.1em rgba(0,0,0,0.05);
     color: var(--gray);
     margin: 0.8em 0;
     min-height: auto;
     padding: 0 0 1em 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .post-container {
     width: 100%;
   }
-
 }

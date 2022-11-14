@@ -1,5 +1,7 @@
-<div class="sidebar-item">
-  <h6>Categorias</h6>
+<section class="sidebar">
+
+  <div class="sidebar-item">
+    <h6>Categorias</h6>
   <ul class="category-ul">
     <li *ngFor="let category of categories">
       <a href="#" class="category-link">{{category.name}}</a>
@@ -12,3 +14,5 @@
   <h6>Procurando alguma notícia?</h6>
   <app-input placeholder="Pesquisar por..." icon="search"></app-input>
 </div>
+
+</section>
