@@ -4,7 +4,7 @@
   <div class="post-body">
     <img [src]="post.image" alt="Imagem do post">
     <h1>{{ post.title }}</h1>
-    <h6>Artigo escrito em {{ formatDate(post.createdAt) }}.</h6>
+    <h6>Artigo escrito em {{ formatDate(post.createdAt ?? '') }}.</h6>
     <div class="body">
       {{ post.body }}
     </div>

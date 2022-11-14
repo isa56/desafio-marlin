@@ -27,6 +27,7 @@ export class DetailsComponent implements OnInit {
   }
 
   formatDate(date: string): string {
-    return new Date(date).toLocaleDateString();
+    if (date) return new Date(date).toLocaleDateString();
+    return '';
   }
 }

@@ -14,7 +14,8 @@ import {
 export class InputComponent implements OnInit {
   @Input() placeholder: string = '';
   @Input() icon: string = '';
-  @Output() inputEvent = new EventEmitter();
+  @Input() inputValue: string = '';
+  @Output() inputValueChange: EventEmitter<string> = new EventEmitter<string>();
 
   iconUsed!: IconDefinition;
   faMagnifyingGlass = faMagnifyingGlass;
@@ -35,7 +36,4 @@ export class InputComponent implements OnInit {
     }
   }
 
-  onSubmit(value: string) {
-    this.inputEvent.emit(value);
-  }
 }
