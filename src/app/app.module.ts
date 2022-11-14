@@ -14,6 +14,7 @@ import { InputComponent } from './components/input/input.component';
 import { HomeComponent } from './views/home/home.component';
 import { DetailsComponent } from './views/details/details.component';
 import { CreateArticleComponent } from './views/create-article/create-article.component';
+import { GoBackComponent } from './components/go-back/go-back.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CreateArticleComponent } from './views/create-article/create-article.co
     HomeComponent,
     DetailsComponent,
     CreateArticleComponent,
+    GoBackComponent,
   ],
   imports: [
     AppRoutingModule,
