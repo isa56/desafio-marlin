@@ -1,22 +1,30 @@
 # Desafio Marlin
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/591ba8dc-27f7-440d-93f4-200e3e1dc5db/deploy-status)](https://app.netlify.com/sites/desafio-marlin-angular/deploys)
+
+Você pode ver esse site em produção em [https://desafio-marlin-angular.netlify.app/](https://desafio-marlin-angular.netlify.app/).
+
 ## Descrição
 
-Projeto de front end para o desafio da Marlin. Desenvolvido com Angular 14.
+Projeto de front end para o desafio de estágio em front end da [Marlin](https://www.marlin.com.br/). Desenvolvido com Angular 14.
 
-Esse projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) na versão 14.2.8.
+Esse projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli).
 
-## Rodando o servidor de desenvolvimento
+## Para utilizar o projeto
 
-Rode `ng serve` para criar o servidor de desenvolvimento. [http://localhost:4200/](http://localhost:4200/). A aplicação vai se iniciar sozinha.
+Rode `ng serve` para iniciar o servidor de desenvolvimento. Acesse [http://localhost:4200/](http://localhost:4200/) para visualizar a aplicação.
+
+- No endereço padrão, você verá a página inicial, com a listagem de *posts*: [http://localhost:4200/register](http://localhost:4200/), ou em [https://desafio-marlin-angular.netlify.app/](https://desafio-marlin-angular.netlify.app/);
+- No endereço */detalhes/{id}*, você verá um post específico: [http://localhost:4200/detalhes/5](http://localhost:4200/detalhes/5) ou em [https://desafio-marlin-angular.netlify.app/detalhes/5](https://desafio-marlin-angular.netlify.app/detalhes/5);
+- No endereço */criar-artigo*, você poderá criar um novo post: [http://localhost:4200/criar-artigo](http://localhost:4200/criar-artigo), ou em [https://desafio-marlin-angular.netlify.app/criar-artigo](https://desafio-marlin-angular.netlify.app/criar-artigo).
 
 ## Sobre o desenvolvimento
 
-O projeto foi desenvolvido utilizando Angular 14. Sobre as etapas de desenvolvimento:
+Todas as etapas do desenvolvimento estão registradas neste GitHub. Os detalhes de como foram implementas determinadas partes estão abaixo:
 
 1. Etapa 1: Criar *HTML* e *CSS* responsivo de acordo com imagem fornecida.
 
-    Esta etapa foi desenvolvida de forma conjunta à etapa 2. Ou seja, O projeto em Angular foi gerado e, a partir daí, foi criado o HTML e CSS para a página inicial.
+    Esta etapa foi desenvolvida de forma conjunta à etapa 2. Ou seja, O projeto em Angular foi gerado e, a partir daí, foi criado o HTML e CSS para a página inicial nos diferentes componentes deste projeto.
 
 2. Etapa 2: Criar o projeto em Angular e migrar o HTML e CSS para o projeto. Além disso, consumir uma *API* para listagem de posts.
 

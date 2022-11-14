@@ -29,9 +29,16 @@ export class CreateArticleComponent implements OnInit {
       image: this.image,
     };
 
-    this.postsService.createPost(post).subscribe((post: Post) => {
-      this.router.navigate([`/detalhes/${post.id}`]);
-    });
+    this.postsService.createPost(post).subscribe(
+      (post: Post) => {
+        this.router.navigate([`/detalhes/${post.id}`]);
+      },
+      (error) => {
+        alert(
+          `Ocorreu um erro: ${error.error}. Por favor, tente mais tarde ou entre em contato com o suporte.`
+        );
+      }
+    );
 
     this.title = '';
     this.body = '';
