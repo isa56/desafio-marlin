@@ -9,7 +9,10 @@ export class CreateArticleComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  onSubmit(): void {
+
   }
 
 }
