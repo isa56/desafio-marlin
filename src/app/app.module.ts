@@ -11,6 +11,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PostsContainerComponent } from './components/posts-container/posts-container.component';
 import { PostComponent } from './components/post/post.component';
 import { InputComponent } from './components/input/input.component';
+import { HomeComponent } from './views/home/home.component';
+import { DetailsComponent } from './views/details/details.component';
+import { CreateArticleComponent } from './views/create-article/create-article.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { InputComponent } from './components/input/input.component';
     SidebarComponent,
     PostsContainerComponent,
     PostComponent,
-    InputComponent
+    InputComponent,
+    HomeComponent,
+    DetailsComponent,
+    CreateArticleComponent
   ],
   imports: [
     AppRoutingModule,

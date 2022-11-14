@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-
 
 @Component({
   selector: 'app-input',

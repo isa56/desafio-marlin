@@ -21,7 +21,7 @@ export class PostsService {
   fetchPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.apiUrl);
   }
-  getPost(id: number): Observable<Post> {
+  getPost(id: string): Observable<Post> {
     return this.http.get<Post>(`${this.apiUrl}/${id}`);
   }
   createPost(post: Post): Observable<Post> {
