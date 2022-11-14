@@ -5,17 +5,23 @@ import { Post } from '../../Post';
 @Component({
   selector: 'app-posts-container',
   templateUrl: './posts-container.component.html',
-  styleUrls: ['./posts-container.component.css']
+  styleUrls: ['./posts-container.component.css'],
 })
 export class PostsContainerComponent implements OnInit {
   posts: Post[] = [];
 
-  constructor(private postsService: PostsService) { }
+  constructor(private postsService: PostsService) {}
 
   ngOnInit(): void {
-    this.postsService.fetchPosts().subscribe((posts: Post[]) => {
-      this.posts = posts;
-    });
+    this.postsService.fetchPosts().subscribe(
+      (posts: Post[]) => {
+        this.posts = posts;
+      },
+      (error) => {
+        alert(
+          `Ocorreu um erro: ${error.error}. Por favor, tente mais tarde ou entre em contato com o suporte.`
+        );
+      }
+    );
   }
-
 }

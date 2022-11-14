@@ -21,9 +21,16 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
     const id = this.router.snapshot.params['id'];
 
-    this.postsService.getPost(id).subscribe((post: Post) => {
-      this.post = post;
-    });
+    this.postsService.getPost(id).subscribe(
+      (post: Post) => {
+        this.post = post;
+      },
+      (error) => {
+        alert(
+          `Ocorreu um erro: ${error.error}. Por favor, tente mais tarde ou entre em contato com o suporte.`
+        );
+      }
+    );
   }
 
   formatDate(date: string): string {
