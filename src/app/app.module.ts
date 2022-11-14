@@ -25,7 +25,7 @@ import { CreateArticleComponent } from './views/create-article/create-article.co
     InputComponent,
     HomeComponent,
     DetailsComponent,
-    CreateArticleComponent
+    CreateArticleComponent,
   ],
   imports: [
     AppRoutingModule,

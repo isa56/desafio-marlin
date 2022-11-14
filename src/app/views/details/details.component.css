@@ -1,0 +1,36 @@
+.post-body {
+  margin: 1.5em auto;
+  max-width: 600px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+img {
+  border-radius: 0.2em;
+  box-shadow:  0 0.2em 0.3em 0.1em rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-top: 1em;
+}
+
+h6 {
+  color: var(--medium-blue);
+  margin: 2em 0;
+}
+
+@media screen and (max-width: 600px) {
+  .post-body {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+}
