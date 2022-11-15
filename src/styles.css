@@ -5,13 +5,9 @@
   --platinum: #e2e0e2;
   --gray: #424242;
   --dark-puce: #473c42;
-  --rackley: #6288af;
   --pacific-blue: #12a1cc;
   --cyan-blue: #2793c4;
   --medium-blue: #044c91;
-  --cool-blue: #0a2e5c;
-  --independence: #5b546c;
-  --crimson: #dc1830;
 }
 
 * {
@@ -55,7 +51,7 @@ a:visited {
   color: var(--pacific-blue);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .container {
     padding: 0 1rem;
   }
