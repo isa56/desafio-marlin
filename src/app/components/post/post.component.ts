@@ -8,8 +8,11 @@ import { Post } from '../../Post';
 })
 export class PostComponent implements OnInit {
   @Input() post!: Post;
+  postSummary: string = '';
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.postSummary = this.post.body.substring(0, 300) + '...';
+  }
 }

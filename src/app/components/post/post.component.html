@@ -1,6 +1,6 @@
 <div class="post-container">
-  <img [src]="post.image" alt="Imagem do post">
+  <img [src]="post.image" alt="Imagem do post" onerror="this.onerror=null; this.src='assets/images/404notfound.jpg'">
   <h3>{{post.title}}</h3>
-  <p>{{post.body}}</p>
+  <p>{{postSummary}}</p>
   <a [routerLink]="['/detalhes', post.id]">Leia mais</a>
 </div>
