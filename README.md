@@ -4,6 +4,8 @@
 
 Você pode ver esse site em produção em [https://desafio-marlin-angular.netlify.app/](https://desafio-marlin-angular.netlify.app/).
 
+![Site em demonstração](/src/assets/images/gif-demonstracao.gif)
+
 ## Descrição
 
 Projeto de front end para o desafio de estágio em front end da [Marlin](https://www.marlin.com.br/). Desenvolvido com Angular 14.
@@ -15,7 +17,7 @@ Esse projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angu
 Rode `ng serve` para iniciar o servidor de desenvolvimento. Acesse [http://localhost:4200/](http://localhost:4200/) para visualizar a aplicação.
 
 - No endereço padrão, você verá a página inicial, com a listagem de *posts*: [http://localhost:4200/register](http://localhost:4200/), ou em [https://desafio-marlin-angular.netlify.app/](https://desafio-marlin-angular.netlify.app/);
-- No endereço */detalhes/{id}*, você verá um post específico: [http://localhost:4200/detalhes/5](http://localhost:4200/detalhes/5) ou em [https://desafio-marlin-angular.netlify.app/detalhes/5](https://desafio-marlin-angular.netlify.app/detalhes/5);
+- No endereço */detalhes/{id}*, você verá um post específico: [http://localhost:4200/detalhes/4](http://localhost:4200/detalhes/5) ou em [https://desafio-marlin-angular.netlify.app/detalhes/4](https://desafio-marlin-angular.netlify.app/detalhes/5);
 - No endereço */criar-artigo*, você poderá criar um novo post: [http://localhost:4200/criar-artigo](http://localhost:4200/criar-artigo), ou em [https://desafio-marlin-angular.netlify.app/criar-artigo](https://desafio-marlin-angular.netlify.app/criar-artigo).
 
 ## Sobre o desenvolvimento
