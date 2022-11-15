@@ -1,6 +1,10 @@
-<section class="sidebar">
+<section class="sidebar" (window:resize)="onResize($event)">
 
-  <div class="sidebar-item">
+  <div class="sidebar-item btn" (click)="toggleSidebar()">
+    <fa-icon class="icon" [icon]="faBars"></fa-icon>
+  </div>
+
+  <div class="sidebar-item" *ngIf="shouldShowSidebar">
     <h6>Categorias</h6>
   <ul class="category-ul">
     <li *ngFor="let category of categories">
@@ -10,7 +14,7 @@
   </ul>
 </div>
 
-<div class="sidebar-item">
+<div class="sidebar-item" *ngIf="shouldShowSidebar">
   <h6>Procurando alguma notícia?</h6>
   <app-input placeholder="Pesquisar por..." icon="search"></app-input>
 </div>

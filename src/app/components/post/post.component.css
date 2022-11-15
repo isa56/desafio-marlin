@@ -37,13 +37,17 @@
   padding: 0 1em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .post-container {
-    box-shadow:  0 0.4em 0.5em 0.1em rgba(0,0,0,0.05);
-    color: var(--gray);
+    margin: 0.8em 0.4em;
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .post-container {
     margin: 0.8em 0.4em;
     min-height: auto;
-    padding: 0 0 1em 0;
     width: 16em;
   }
 }
@@ -52,5 +56,10 @@
   .post-container {
     margin: 0;
     width: 100%;
+  }
+
+  .post-container img {
+    height: 170px;
+    width: 95%;
   }
 }
