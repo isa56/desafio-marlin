@@ -15,7 +15,7 @@ Esse projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angu
 Rode `ng serve` para iniciar o servidor de desenvolvimento. Acesse [http://localhost:4200/](http://localhost:4200/) para visualizar a aplicação.
 
 - No endereço padrão, você verá a página inicial, com a listagem de *posts*: [http://localhost:4200/register](http://localhost:4200/), ou em [https://desafio-marlin-angular.netlify.app/](https://desafio-marlin-angular.netlify.app/);
-- No endereço */detalhes/{id}*, você verá um post específico: [http://localhost:4200/detalhes/5](http://localhost:4200/detalhes/5) ou em [https://desafio-marlin-angular.netlify.app/detalhes/5](https://desafio-marlin-angular.netlify.app/detalhes/5);
+- No endereço */detalhes/{id}*, você verá um post específico: [http://localhost:4200/detalhes/4](http://localhost:4200/detalhes/5) ou em [https://desafio-marlin-angular.netlify.app/detalhes/4](https://desafio-marlin-angular.netlify.app/detalhes/5);
 - No endereço */criar-artigo*, você poderá criar um novo post: [http://localhost:4200/criar-artigo](http://localhost:4200/criar-artigo), ou em [https://desafio-marlin-angular.netlify.app/criar-artigo](https://desafio-marlin-angular.netlify.app/criar-artigo).
 
 ## Sobre o desenvolvimento
