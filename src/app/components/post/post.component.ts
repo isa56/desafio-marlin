@@ -15,4 +15,8 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
     this.postSummary = this.post.body.substring(0, 300) + '...';
   }
+
+  throwSentryError(): void {
+    console.error('erro');
+  }
 }
