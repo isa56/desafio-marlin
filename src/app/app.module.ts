@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+import * as Sentry from '@sentry/angular';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -17,6 +19,7 @@ import { DetailsComponent } from './views/details/details.component';
 import { CreateArticleComponent } from './views/create-article/create-article.component';
 import { GoBackComponent } from './components/go-back/go-back.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -35,11 +38,28 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    FontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: ErrorHandler,
+      useValue: Sentry.createErrorHandler({
+        showDialog: true,
+      }),
+    },
+    {
+      provide: Sentry.TraceService,
+      deps: [Router],
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => () => {},
+      deps: [Sentry.TraceService],
+      multi: true,
+    },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

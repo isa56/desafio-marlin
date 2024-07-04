@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run sentry:sourcemaps",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org student-pkm --project javascript-angular ./dist && sentry-cli sourcemaps upload --org student-pkm --project javascript-angular ./dist"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@sentry/angular": "^8.14.0",
+    "@sentry/cli": "^2.32.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
